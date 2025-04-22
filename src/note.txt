@@ -11,8 +11,8 @@ npm install
 npm run dev
 
 CLEAN UP
-1. css styles (app.css, index.css)
-2. clear our app.jsx
+ 1.⁠ ⁠css styles (app.css, index.css)
+ 2.⁠ ⁠clear our app.jsx
 APP.JSX (root component)
 Navbar
 Button
@@ -20,8 +20,8 @@ Anchor
 
 create a react component
 function
-1. component must start with uppercase (e.g. Button, Video)
-2. must return one sth (jsx element)
+ 1.⁠ ⁠component must start with uppercase (e.g. Button, Video)
+ 2.⁠ ⁠must return one sth (jsx element)
 
 
 const Navbar = () => { 
@@ -34,26 +34,26 @@ p
 react fragment <> </>
 
 JSX (html)
-1. every element must be closed <br /> <img src alt /> <hr></hr>
-2. don't use class, use className
-3. label htmlFor
+ 1.⁠ ⁠every element must be closed <br /> <img src alt /> <hr></hr>
+ 2.⁠ ⁠don't use class, use className
+ 3.⁠ ⁠label htmlFor
 
 Styling in react
-1. global css (app.css, index.css)
-2. Local css (selecting each components one by one)
-3. inline css style = {{color: 'red', fontFamily: 'sans-serif'}}
-4. external css library (tailwind)
+ 1.⁠ ⁠global css (app.css, index.css)
+ 2.⁠ ⁠Local css (selecting each components one by one)
+ 3.⁠ ⁠inline css style = {{color: 'red', fontFamily: 'sans-serif'}}
+ 4.⁠ ⁠external css library (tailwind)
 
 working with Tailwind in REACT
-1. npm install
+ 1.⁠ ⁠npm install
 
 
 objective 
-1. create a react app using vite
-2. customize your app
-3. create components and nest them appropriately
-4. style your components
-5. working with images in react
+ 1.⁠ ⁠create a react app using vite
+ 2.⁠ ⁠customize your app
+ 3.⁠ ⁠create components and nest them appropriately
+ 4.⁠ ⁠style your components
+ 5.⁠ ⁠working with images in react
 
 function Button ({bg, color}) {
 
@@ -163,7 +163,7 @@ const handleClick = () => {
 <button onClick= {() => alert ('welcome user')}>
 
 Conditional Rendering
-1. Multiple returns
+ 1.⁠ ⁠Multiple returns
 const isUserLogged in = false 
 if (isUserLogged) {
   return <p>hello world</p>
@@ -171,12 +171,12 @@ if (isUserLogged) {
 
 return <p>Goodbye</p>
 
-2. ternary operator 
+ 2.⁠ ⁠ternary operator 
 const isSubmitting = true
 isSubmitting ? 'Loading ...' : "Log in"
 isUserLoggedIn ? 'Logout' : Login
 
-3. short circuit evaluation logical operators && ||
+ 3.⁠ ⁠short circuit evaluation logical operators && ||
 
 const isPasswordCorrect = true
 
@@ -185,20 +185,20 @@ isPasswordCorrect && 'Go and log in'
 isPasswordCorrect || 'log out'
 true || true == true 
 
-1. intall react 
-2. customize your app
+ 1.⁠ ⁠intall react 
+ 2.⁠ ⁠customize your app
 3.  create and nest components
-4. style n react
-5. working with images
-6. dynamic Values
-7. props, props destructuring, props CHILDREN
-8. Outputting Lists (map)
-9. responding to users event
-10. Conditional rendering
+ 4.⁠ ⁠style n react
+ 5.⁠ ⁠working with images
+ 6.⁠ ⁠dynamic Values
+ 7.⁠ ⁠props, props destructuring, props CHILDREN
+ 8.⁠ ⁠Outputting Lists (map)
+ 9.⁠ ⁠responding to users event
+10.⁠ ⁠Conditional rendering
 
 adding interactivity
 
-1. state management
+ 1.⁠ ⁠state management
 a. useState
 
 const [age, setAge] = useState(20)
@@ -225,3 +225,22 @@ exort useFetch = (api) => {
   const [data, seData] = useState([])
 
 }
+
+controlled- inputs
+
+<swiper>
+testimonial.map((t) => {
+
+})
+ <swiperslide>1</swiperslide>
+ <swiperslide>2</swiperslide>
+ <swiperslide>3</swiperslide>
+ <swiperslide>4</swiperslide>
+
+ tailwind - DAISY UI
+ react-icons
+ react-loader
+
+ axios - data fetching
+ react-hook-forms
+ yup
