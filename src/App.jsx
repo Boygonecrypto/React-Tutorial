@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import Error404 from "./pages/Error404";
 import Login from "./pages/Login";
 import Timeline from "./pages/Timeline";
+import DashboardLayout from "./pages/DashboardLayout";
 function App() {
   return (
     <>
@@ -29,6 +30,12 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/timeline/:id" element={<SingleTweet />} />
+          <Route path="/dashboard" element={<DashboardLayout />}>
+            {/* Children will be here */}
+            <Route index element={<h1>Home Dashboard</h1>} />
+            <Route path="trash" element={<h1>Trash Side</h1>} />
+            <Route path="spam" element={<h1>Spam Side</h1>} />
+          </Route>
           <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />

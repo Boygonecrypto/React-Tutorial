@@ -1,19 +1,41 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
       <nav className="flex justify-between items-center h-[80px] container">
         <div>
-          <Link to="/">Home</Link>
+          <NavLink to="/">Home</NavLink>
         </div>
         <div className="flex gap-3">
-          <Link to="/about">About</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/Login" className="btn btn-accent">
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "underline" : "")}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) => (isActive ? "underline" : "")}
+          >
+            Contact
+          </NavLink>
+          <NavLink
+            to="/dashboard"
+            className={({ isActive }) => (isActive ? "underline" : "")}
+          >
+            Dashboard
+          </NavLink>
+          <NavLink
+            to="/Login"
+            className={({ isActive }) =>
+              isActive ? "underline btn btn-accent" : "btn btn-accent"
+            }
+          >
             Login
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </div>
