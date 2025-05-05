@@ -237,7 +237,8 @@ testimonial.map((t) => {
  <swiperslide>3</swiperslide>
  <swiperslide>4</swiperslide>
 
- tailwind - DAISY UI
+ tailwind 
+ daisyui
  react-icons
  react-loader
 
@@ -245,4 +246,43 @@ testimonial.map((t) => {
  react-hook-forms
  yup
 
- npm install react-router-dom 
+ REACT ROUTER DOM
+ SPA - single page application
+ MPA - multiple pages application
+
+npm i react-router-dom
+
+pages, home,about, contact
+
+react-router-dom -app.jsx
+
+//navigation a href
+<link to='/'>Home</link>
+<link to='/about'>About</link>
+<link to='/store'>Store</link>
+
+error router
+path= '*
+
+redirecting - changing browser location
+ 1.⁠ ⁠automatic
+ 2.⁠ ⁠programmatic - redirecting after user action
+
+dynamic route
+
+timeline
+
+tweet1 --> more details (like, retweet, comment)
+tweet2 --> more details (like, retweet, comment)
+
+OUTLET (children Route)
+
+Navlink - special version of <link>
+automatically applies an active class - styling
+isActive
+
+context api 
+
+useRef
+
+react optimization
