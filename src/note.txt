@@ -285,4 +285,19 @@ context api
 
 useRef
 
+Global State
+context api
+store (val1, val2) c1 c2 c3
+prop drilling
+
+const AppContext = createContext()
+
 react optimization
+1. code splitting (50mb) - can affect the speed<  
+home can be 50mb
+suspense lazy
+import Home from '../page'
+import Home from Lazy()
+<Suspense fallback ={logo}>
+  <Home/>
+</Suspense>
